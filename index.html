@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dynamic Time Form</h1>
+      <form id="dynamicForm">
+        <div class="row">
+          <input type="date" class="date-input" name="date" />
+          <input type="time" class="time-input" name="initialTime" />
+          <input type="time" class="time-input" name="finalTime" />
+          <button type="button" class="remove-btn" disabled>-</button>
+          <button type="button" class="add-btn">+</button>
+        </div>
+      </form>
+      <button class="submit-btn" id="submitForm">Generate JSON</button>
+      <pre id="jsonOutput"></pre>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
