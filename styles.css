@@ -9,8 +9,10 @@ body {
   background-color: #f4f4f9;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
+  overflow: auto; /* Allows the entire page to scroll if content overflows */
+  margin-top: 2rem; /* Adds space on top of the card */
 }
 
 .container {
@@ -20,6 +22,7 @@ body {
   border-radius: 8px;
   width: 100%;
   max-width: 500px;
+  min-height: 60vh; /* Ensures the container has a minimum height */
 }
 
 h1 {
@@ -33,7 +36,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  gap: 10px; /* Adds spacing between inputs */
+  gap: 10px;
 }
 
 input {
@@ -42,7 +45,7 @@ input {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 1rem;
-  margin-right: 10px; /* Adds more horizontal spacing between inputs */
+  margin-right: 10px;
 }
 
 button {
